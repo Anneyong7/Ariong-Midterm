@@ -26,14 +26,13 @@ try {
     $stmt = $pdo->prepare("
         SELECT
             username,
-            -- TODO: uncomment and rename columns to match your schema, e.g.:
-            -- full_name,
-            -- course,
-            -- year_level,
-            -- email,
-            -- bio,
+             full_name,
+             course,
+             year_level,
+             email,
+             bio,
             created_at
-        FROM native_users           -- TODO: change table name if needed
+        FROM native_users           
         WHERE username = ?
         LIMIT 1
     ");

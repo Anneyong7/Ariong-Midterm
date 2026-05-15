@@ -123,22 +123,30 @@ document.addEventListener('DOMContentLoaded', () => {
                             '  <strong>' + (d.username    || '—') + '</strong>' +
                             '</li>' +
                             // TODO: uncomment when your API returns these fields
-                             '<li class="list-group-item d-flex justify-content-between px-0">' +
-                             '  <span class="text-muted">Full Name</span>' +
-                             '  <strong>' + (d.full_name  || '—') + '</strong>' +
-                             '</li>' +
-                             '<li class="list-group-item d-flex justify-content-between px-0">' +
-                             '  <span class="text-muted">Course</span>' +
-                             '  <strong>' + (d.course     || '—') + '</strong>' +
-                             '</li>' +
-                             '<li class="list-group-item d-flex justify-content-between px-0">' +
-                             '  <span class="text-muted">Year Level</span>' +
-                             '  <strong>' + (d.year_level || '—') + '</strong>' +
-                             '</li>' +
-                             '<li class="list-group-item d-flex justify-content-between px-0">' +
-                             '  <span class="text-muted">Email</span>' +
-                             '  <strong>' + (d.email      || '—') + '</strong>' +
-                             '</li>' +
+                            '<li class="list-group-item d-flex justify-content-between px-0">' +
+                            '  <span class="text-muted">Full Name</span>' +
+                            '  <strong>' + (d.full_name  || '—') + '</strong>' +
+                            '</li>' +
+                            '<li class="list-group-item d-flex justify-content-between px-0">' +
+                            '  <span class="text-muted">Course</span>' +
+                            '  <strong>' + (d.course     || '—') + '</strong>' +
+                            '</li>' +
+                            '<li class="list-group-item d-flex justify-content-between px-0">' +
+                            '  <span class="text-muted">Year Level</span>' +
+                            '  <strong>' + (d.year_level || '—') + '</strong>' +
+                            '</li>' +
+
+                            '<li class="list-group-item d-flex justify-content-between px-0">' +
+                            '  <span class="text-muted">Email</span>' +
+                            '  <strong>' + (d.email      || '—') + '</strong>' +
+                            '</li>' +
+
+                            // I added this bio field sir as an example of how to add more rows if you expand your profile data
+                            '<li class="list-group-item d-flex justify-content-between px-0">' + 
+                            '  <span class="text-muted">Bio</span>' +
+                            '  <strong>' + (d.bio      || '—') + '</strong>' +
+                            '</li>' +
+
                             '<li class="list-group-item d-flex justify-content-between px-0">' +
                             '  <span class="text-muted">Member Since</span>' +
                             '  <strong>' + (d.created_at  || '—') + '</strong>' +
